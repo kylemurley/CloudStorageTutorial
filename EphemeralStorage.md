@@ -4,13 +4,6 @@
 
 
 
-## Amazon EC2
-
-
-
-## OpenStack Nova
-
-https://www.serfish.com/console/ajaxterm.html?ip=147.75.83.202&user=admin&port=22
 
 
 ## Amazon EC2 Walk Through
@@ -19,12 +12,10 @@ Log into the AWS EC2 console at:
 
 * https://console.aws.amazon.com/ec2
 
-### Launch Instance
-Click the "Launch Instance" button
-Click the "Select" Amazon Linux button
-Review the Instance and EBS storage options
-
-
+### Launch Instance/Review Storage Options
+* Click the "Launch Instance" button
+* Click the "Select" Amazon Linux button
+* Review the Instance and EBS storage options
 
 ## OpenStack Nova Walkthough
 
@@ -32,7 +23,7 @@ Log into the OpenStack Horizon web dashboard and proceed to the compute page.
 
 * Project->Compute->Instance
 
-### Launch Instance
+### Launch Instance/Review Storage Options
 Click the "Launch Instance" button
 * Instance Name: web
 * Source: CirrosWeb
