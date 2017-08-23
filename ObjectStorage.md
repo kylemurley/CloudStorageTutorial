@@ -10,11 +10,20 @@ Amazon Simple Storage Service is storage for the Internet. It is designed to mak
 
 https://s3.amazonaws.com/openstacksandiego/IMG_20161023_011414384_HDR.jpg
 
+s3.amazonaws.com (server/cloud)
+openstacksandiego (bucket name)
+IMG_20161023_011414384_HDR.jpg (file name)
+
 ## OpenStack Swift
 
 The OpenStack Object Store project, known as Swift, offers cloud storage software so that you can store and retrieve lots of data with a simple API. It's built for scale and optimized for durability, availability, and concurrency across the entire data set.
 
-https://cloud.openstacksandiego.org/openstacksandiego/IMG_20161023_011414384_HDR.jpg
+Sample URL:
+http://blue.openstacksandiego.org:8080/v1/AUTH_4f7a03952f6c42b9a818c7263cfbc461/web/IMG_20161023_011536695.jpg
+
+blue.openstacksandiego.org (server/cloud)
+web (container name)
+IMG_20161023_011536695.jpg (file name)
 
 
 ## Amazon S3 Walk Through
@@ -27,11 +36,22 @@ https://cloud.openstacksandiego.org/openstacksandiego/IMG_20161023_011414384_HDR
 
 ## OpenStack Swift Walk Through
 
-###Create Bucket
+Log into the Horizon web dashboard and proceed to the 
 
-###Upload Data
+### Object Store->Container
 
-###Download Data
+### Create Bucket
+* "+ Container"
+* Enter new container name (i.e. web)
+* Mark container "Public"
+
+### Upload Data
+* Select the new container
+* Cleck the "upload" button to right of search box
+* Pick a file and upload
+
+### Download Data
+* Click the file to download
 
 ## Wrap Up
 
