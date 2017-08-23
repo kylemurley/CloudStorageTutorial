@@ -14,6 +14,9 @@ time packstack                                  \
 	--os-manila-install=y                   \
         --os-heat-install=y
 
+yum -y install openstack-manila-ui
+
+
 yum -y update
 
 # fix for https://bugs.launchpad.net/horizon/+bug/1671084 (heat topology tab not present in horizon)
