@@ -50,6 +50,7 @@ df
 ls /var/www
 echo "hello world" > /var/www/index.html
 cat /var/www/index.html
+```
 
 ## Wrap Up
 
