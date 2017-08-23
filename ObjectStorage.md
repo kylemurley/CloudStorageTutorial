@@ -35,4 +35,4 @@ https://cloud.openstacksandiego.org/openstacksandiego/IMG_20161023_011414384_HDR
 
 ## Wrap Up
 
-Once you're done, return back to the <A HREF="../Readme.md">main page</A> for the next type of storage!
+Once you're done, return back to the <A HREF="../master/Readme.md">main page</A> for the next type of storage!
