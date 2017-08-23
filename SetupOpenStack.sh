@@ -112,6 +112,11 @@ cp -R ~root/.ssh ~admin/
 chown -R admin.admin ~admin/.ssh/
 
 
+# setup user accounts
+wget https://raw.githubusercontent.com/OpenStackSanDiego/CloudStorageTutorial/master/add_labs.sh
+sh add_labs.sh
+
+
 sync
 sleep 1
 reboot
