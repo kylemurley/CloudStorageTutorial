@@ -69,6 +69,12 @@ openstack router add subnet $ROUTER_ID $SUBNET_ID
 PUBLIC_NETWORK_ID=`openstack network show public -f value -c id`
 openstack router set --external-gateway $PUBLIC_NETWORK_ID $ROUTER_ID
 
+# allow SSH and HTTP traffic in the default security group
+SECURITY_GROUP=`openstack security group list --project $PROJECT -f value -c ID`
+
+openstack security group rule create --dst-port 80 --protocol tcp --ingress $SECURITY_GROUP
+openstack security group rule create --dst-port 22 --protocol tcp --ingress $SECURITY_GROUP
+
 done
 
 
