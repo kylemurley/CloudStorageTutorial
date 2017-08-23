@@ -83,8 +83,13 @@ glance  --os-image-api-version 2 image-create --protected True --name $IMG_NAME 
 
 ## end of cloud customization
 	
+# setup user accounts
+wget https://raw.githubusercontent.com/OpenStackSanDiego/CloudStorageTutorial/master/add_labs.sh
+sh add_labs.sh
 	
-	
+
+## external connectivity will be lost here until the reboot
+## don't put anything that requires external networking below here...
 
 ## setup physical networking
 IFCFG_BOND0=/etc/sysconfig/network-scripts/ifcfg-bond0
@@ -112,10 +117,6 @@ adduser -p 42ZTHaRqaaYvI --group wheel admin
 cp -R ~root/.ssh ~admin/
 chown -R admin.admin ~admin/.ssh/
 
-
-# setup user accounts
-wget https://raw.githubusercontent.com/OpenStackSanDiego/CloudStorageTutorial/master/add_labs.sh
-sh add_labs.sh
 
 
 sync
