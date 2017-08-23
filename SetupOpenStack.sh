@@ -10,6 +10,7 @@ time packstack                                  \
         --nagios-install=n                      \
         --os-ceilometer-install=n               \
         --os-neutron-ml2-type-drivers=flat,vxlan \
+	--os-manila-install=y                   \
         --os-heat-install=y
 
 yum -y update
